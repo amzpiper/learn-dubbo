@@ -26,6 +26,16 @@ import org.apache.dubbo.rpc.service.GenericService;
 
 public class Application {
     public static void main(String[] args) {
+        //当前应用配置
+        ApplicationConfig application = new ApplicationConfig();
+        application.setName("yyy");
+
+        //连接注册中心配置
+        RegistryConfig registry = new RegistryConfig();
+        registry.setAddress("zookeeper://127.0.0.1:2181");
+        registry.setUsername("aaa");
+        registry.setPassword("bbb");
+
         if (isClassic(args)) {
             runWithRefer();
         } else {
@@ -60,10 +70,14 @@ public class Application {
     }
 
     private static void runWithRefer() {
+        // 注意：ReferenceConfig为重对象，内部封装了与注册中心的连接，以及与服务提供方的连接
+        // 引用远程服务
         ReferenceConfig<DemoService> reference = new ReferenceConfig<>();
         reference.setApplication(new ApplicationConfig("dubbo-demo-api-consumer"));
         reference.setRegistry(new RegistryConfig("zookeeper://127.0.0.1:2181"));
         reference.setInterface(DemoService.class);
+
+        // 和本地bean一样使用xxxService
         DemoService service = reference.get();
         String message = service.sayHello("dubbo");
         System.out.println(message);
