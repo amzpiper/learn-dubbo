@@ -37,7 +37,6 @@ public class Application {
         String hello = service.sayHello("world");
         System.out.println("result :" + hello);
     }
-
     @Configuration
     @EnableDubbo(scanBasePackages = "org.apache.dubbo.demo.consumer.comp")
     @PropertySource("classpath:/spring/dubbo-consumer.properties")
