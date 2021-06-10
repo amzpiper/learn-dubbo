@@ -18,13 +18,12 @@ package org.apache.dubbo.demo.consumer.comp;
 
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.demo.DemoService;
-
 import org.springframework.stereotype.Component;
-
 import java.util.concurrent.CompletableFuture;
 
 @Component("demoServiceComponent")
 public class DemoServiceComponent implements DemoService {
+    //Reference注解引用服务
     @DubboReference
     private DemoService demoService;
 

@@ -31,12 +31,17 @@ public class Application {
      * launch the application
      */
     public static void main(String[] args) {
+        //启动注解
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConsumerConfiguration.class);
         context.start();
+
+        //使用远程对象
         DemoService service = context.getBean("demoServiceComponent", DemoServiceComponent.class);
         String hello = service.sayHello("world");
         System.out.println("result :" + hello);
     }
+
+    //指定Spring扫描路径
     @Configuration
     @EnableDubbo(scanBasePackages = "org.apache.dubbo.demo.consumer.comp")
     @PropertySource("classpath:/spring/dubbo-consumer.properties")
