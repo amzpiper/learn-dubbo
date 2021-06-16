@@ -41,6 +41,7 @@ public class Application {
         public RegistryConfig registryConfig() {
             RegistryConfig registryConfig = new RegistryConfig();
             registryConfig.setAddress("zookeeper://127.0.0.1:2181");
+            registryConfig.setCheck(false);
             return registryConfig;
         }
     }
