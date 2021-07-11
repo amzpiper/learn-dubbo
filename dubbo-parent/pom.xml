@@ -130,6 +130,7 @@
     </properties>
 
     <modules>
+		<module>dubbo-compiler</module>
         <module>dubbo-common</module>
         <module>dubbo-container</module>
         <module>dubbo-remoting</module>
