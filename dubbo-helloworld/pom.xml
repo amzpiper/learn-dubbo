@@ -19,25 +19,4 @@
         <module>gmall-interface</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.7.12-SNAPSHOT</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <version>2.12.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
-            <version>1.7.2</version>
-        </dependency>
-    </dependencies>
-
 </project>
