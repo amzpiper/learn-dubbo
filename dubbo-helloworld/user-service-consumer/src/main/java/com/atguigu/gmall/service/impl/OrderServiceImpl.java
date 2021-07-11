@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @date 2021/7/5
  * @author guoyh
+ * @date 2021/7/5
  */
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -20,10 +20,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void initOrder(String userId) {
-        System.out.println("用户id:"+userId);
+        System.out.println("用户id:" + userId);
         // 1、查询用户收获地址
         List<UserAddress> userAddressList = userService.getUserAddressList(userId);
-        for (UserAddress address: userAddressList) {
+        for (UserAddress address : userAddressList) {
             System.out.println(address.getUserAddress());
         }
     }
