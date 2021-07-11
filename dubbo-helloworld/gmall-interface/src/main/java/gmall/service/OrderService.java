@@ -1,4 +1,4 @@
-package com.atguigu.gmall.service;
+package gmall.service;
 
 /**
  * @date 2021/7/5

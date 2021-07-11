@@ -14,4 +14,11 @@
     <artifactId>user-service-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>gmall-interface</artifactId>
+            <version>2.7.12-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
