@@ -19,8 +19,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserAddress> getUserAddressList(String userId) {
         UserAddress userAddressOne = new UserAddress();
+        userAddressOne.setUserAddress("北京市区昌平");
         UserAddress userAddressTwo = new UserAddress();
-
+        userAddressTwo.setUserAddress("天安门");
         return Arrays.asList(userAddressOne, userAddressTwo);
     }
 }
