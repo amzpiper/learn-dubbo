@@ -19,15 +19,17 @@
 	<!-- 4、暴露服务   ref：指向服务的真正的实现对象 -->
 	<dubbo:service interface="gmall.service.UserService"
 		ref="userServiceImpl" timeout="1000" version="1.0.0">
-<!--		<dubbo:method name="getUserAddressList" timeout="1000"/>-->
+		<!--<dubbo:method name="getUserAddressList" timeout="1000"/>-->
 	</dubbo:service>
 	<!-- 服务的真正实现 -->
 	<bean id="userServiceImpl" class="com.atguigu.gmall.service.impl.UserServiceImpl"></bean>
 
 	<!-- 5、统一设置服务提供方的规则  -->
-<!--	<dubbo:provider timeout="1000"></dubbo:provider>-->
+	<!--<dubbo:provider timeout="1000"></dubbo:provider>-->
 
 	<!-- 6、连接监控中心 -->
-<!--	<dubbo:monitor protocol="registry"></dubbo:monitor>-->
+	<!-- protocol="registry" 时会从注册中心自动发现监控中心 -->
+	<!-- address="127.0.0.1:7070"可以手动配置 -->
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
 	
 </beans>

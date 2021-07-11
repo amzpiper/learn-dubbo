@@ -32,9 +32,10 @@
 	</dubbo:reference>
 		
 	<!-- 配置当前消费者的统一规则：所有的服务都不检查 -->
-<!--	<dubbo:consumer check="false" timeout="5000"></dubbo:consumer>-->
+	<!--<dubbo:consumer check="false" timeout="5000"></dubbo:consumer>-->
 
-<!--	<dubbo:monitor protocol="registry"></dubbo:monitor>-->
-	<!-- <dubbo:monitor address="127.0.0.1:7070"></dubbo:monitor> -->
-	
+	<!-- 6、连接监控中心 -->
+	<!-- protocol="registry" 时会从注册中心自动发现监控中心 -->
+	<!-- address="127.0.0.1:7070"可以手动配置 -->
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
