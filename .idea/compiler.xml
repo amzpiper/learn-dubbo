@@ -13,8 +13,8 @@
         <module name="dubbo-spring-boot-autoconfigure" />
         <module name="gmall-interface" />
         <module name="dubbo-build-tools" />
-        <module name="dubbo-spring-boot-actuator-compatible" />
         <module name="user-service-consumer" />
+        <module name="dubbo-spring-boot-actuator-compatible" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +26,7 @@
       <module name="dubbo-cluster" target="1.8" />
       <module name="dubbo-common" target="1.8" />
       <module name="dubbo-compatible" target="1.8" />
+      <module name="dubbo-compiler" target="1.8" />
       <module name="dubbo-config" target="1.8" />
       <module name="dubbo-config-api" target="1.8" />
       <module name="dubbo-config-spring" target="1.8" />
@@ -147,6 +148,7 @@
       <module name="dubbo-cluster" options="-proc:none -parameters" />
       <module name="dubbo-common" options="-proc:none -parameters" />
       <module name="dubbo-compatible" options="-proc:none -parameters" />
+      <module name="dubbo-compiler" options="-proc:none" />
       <module name="dubbo-config-api" options="-proc:none -parameters" />
       <module name="dubbo-config-spring" options="-proc:none -parameters" />
       <module name="dubbo-configcenter-apollo" options="-proc:none -parameters" />

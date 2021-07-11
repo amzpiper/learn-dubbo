@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-cluster/dubbo-cluster.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-cluster/dubbo-cluster.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-common/dubbo-common.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-common/dubbo-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-compatible/dubbo-compatible.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-compatible/dubbo-compatible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-parent/compiler/dubbo-compiler.iml" filepath="$PROJECT_DIR$/dubbo-parent/compiler/dubbo-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config-api/dubbo-config-api.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config-api/dubbo-config-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config-spring/dubbo-config-spring.iml" filepath="$PROJECT_DIR$/dubbo-parent/dubbo-config/dubbo-config-spring/dubbo-config-spring.iml" />

@@ -24,10 +24,10 @@
 	<!-- 服务的真正实现 -->
 	<bean id="userServiceImpl" class="com.atguigu.gmall.service.impl.UserServiceImpl"/>
 
-<!--	&lt;!&ndash; 5、统一设置服务提供方的规则  &ndash;&gt;-->
-<!--	<dubbo:provider timeout="1000"></dubbo:provider>-->
+	<!-- 5、统一设置服务提供方的规则  -->
+	<dubbo:provider timeout="1000"></dubbo:provider>
 
-<!--	&lt;!&ndash; 6、连接监控中心 &ndash;&gt;-->
-<!--	<dubbo:monitor protocol="registry"></dubbo:monitor>-->
+	<!-- 6、连接监控中心 -->
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
 	
 </beans>
