@@ -19,12 +19,10 @@ public class OrderServiceImpl implements OrderService {
     UserService userService;
 
     @Override
-    public void initOrder(String userId) {
+    public List<UserAddress> initOrder(String userId) {
         System.out.println("用户id:" + userId);
         // 1、查询用户收获地址
         List<UserAddress> userAddressList = userService.getUserAddressList(userId);
-        for (UserAddress address : userAddressList) {
-            System.out.println(address.getUserAddress());
-        }
+        return userAddressList;
     }
 }

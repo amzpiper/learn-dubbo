@@ -1,8 +1,10 @@
 package com.atguigu.gmall.service.impl;
 
 
+import com.alibaba.dubbo.config.annotation.Service;
 import gmall.bean.UserAddress;
 import gmall.service.UserService;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,6 +18,8 @@ import java.util.List;
  * @author guoyh
  * @date 2021/7/5
  */
+@Service //暴露服务
+@Component
 public class UserServiceImpl implements UserService {
 
     @Override
