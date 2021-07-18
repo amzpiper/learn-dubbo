@@ -7,7 +7,6 @@
     <version>2.7.12-SNAPSHOT</version>
 
     <modules>
-        <module>dubbo-parent</module>
         <module>dubbo-helloworld</module>
     </modules>
 

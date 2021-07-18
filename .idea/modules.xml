@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/dubbo-helloworld.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/dubbo-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-parent.iml" filepath="$PROJECT_DIR$/dubbo-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/gmall-interface/gmall-interface.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/gmall-interface/gmall-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-dubbo.iml" filepath="$PROJECT_DIR$/learn-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/springboot-user-service-consumer/springboot-user-service-consumer.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/springboot-user-service-consumer/springboot-user-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/springboot-user-service-provider/springboot-user-service-provider.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/springboot-user-service-provider/springboot-user-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/user-service-consumer/user-service-consumer.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/user-service-consumer/user-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-helloworld/user-service-provider/user-service-provider.iml" filepath="$PROJECT_DIR$/dubbo-helloworld/user-service-provider/user-service-provider.iml" />
+    </modules>
+  </component>
+</project>
