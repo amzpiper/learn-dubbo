@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 1.导入dobuuo-starter
  * 2.导入dobuuo的其他依赖
+ * @author 郭宇航
  */
 
 //开启基于注解的dubbo功能
