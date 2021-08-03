@@ -1,8 +1,10 @@
 package com.atguigu.gmall;
 
+import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  *
@@ -21,8 +23,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author 郭宇航
  */
 
-//开启基于注解的dubbo功能
+//第一种：开启基于注解的dubbo功能
 @EnableDubbo
+
+//第二种：保留xml
+//@ImportResource(locations = "classpath:provider.xml")
+
+//第三种：创建配置类并指定扫描路径
+//@EnableDubbo(scanBasePackages = "com.atguigu.gmall")
 @SpringBootApplication
 public class SpringBootUserServiceProviderApplication {
 

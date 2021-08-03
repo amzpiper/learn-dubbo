@@ -19,7 +19,7 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
 
     //dubbo提供注解自动从注册中心来发现
-    @Reference
+    @Reference(timeout = 0)
     UserService userService;
 
     @Override
