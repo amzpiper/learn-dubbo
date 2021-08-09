@@ -13,6 +13,7 @@ import java.util.List;
  * 1) 导入dubbo依赖
  * 2、让服务消费者去注册中心订阅服务的服务地址
  *
+ * 旧版本
  * @author guoyh
  * @date 2021/7/5
  */
@@ -20,6 +21,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserAddress> getUserAddressList(String userId) {
+        System.out.println("UserServiceImpl...old");
         UserAddress userAddressOne = new UserAddress();
         userAddressOne.setUserAddress("北京市区昌平");
         UserAddress userAddressTwo = new UserAddress();

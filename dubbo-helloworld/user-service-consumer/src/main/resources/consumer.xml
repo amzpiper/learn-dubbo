@@ -24,10 +24,11 @@
         2）、消费者设置优先(如果级别一样，则消费方优先，提供方次之)
     -->
     <!-- timeout="0" 默认是1000ms-->
-    <!-- retries="":重试次数，不包含第一次调用，0代表不重试-->
-    <!-- 幂等（设置重试次数）【查询、删除、修改】、非幂等（不能设置重试次数）【新增】 -->
+    <!-- retries="":重试次数，不包含第一次调用，0代表不重试，默认为2 -->
+    <!-- retries在合适情况下才需要配置，需要在幂等情况下才用。幂等（设置重试次数，每次效果都一样）【查询、删除、修改】、非幂等（不能设置重试次数，每次效果都不一样）【新增】 -->
+    <!-- version="*" 实现灰度调用，不确定是新版本还是旧版本-->
     <dubbo:reference interface="gmall.service.UserService"
-                     id="userService" timeout="5000" retries="3" version="*" stub="com.atguigu.gmall.service.impl.UserServiceStub">
+                     id="userService" timeout="5000" retries="3" version="*" check="false">
         <dubbo:method name="getUserAddressList" timeout="1000"/>
     </dubbo:reference>
 
@@ -38,4 +39,7 @@
     <!-- protocol="registry" 时会从注册中心自动发现监控中心 -->
     <!-- address="127.0.0.1:7070"可以手动配置 -->
     <dubbo:monitor protocol="registry"></dubbo:monitor>
+
+    <!--配置当前消费者的统一配置：当前所有消费者都不检查,默认check=true-->
+    <dubbo:consumer check="false" timeout="2000"></dubbo:consumer>
 </beans>

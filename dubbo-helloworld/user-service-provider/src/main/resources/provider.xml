@@ -16,13 +16,20 @@
     <!-- 3、指定通信规则（通信协议？通信端口） -->
     <dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
 
-    <!-- 4、暴露服务   ref：指向服务的真正的实现对象 -->
+    <!-- 4、暴露服务-旧版本   ref：指向服务的真正的实现对象 -->
     <dubbo:service interface="gmall.service.UserService"
                    ref="userServiceImpl" timeout="1000" version="1.0.0">
         <!--<dubbo:method name="getUserAddressList" timeout="1000"/>-->
     </dubbo:service>
+    <!-- 4、暴露服务-新版本   ref：指向服务的真正的实现对象 -->
+    <dubbo:service interface="gmall.service.UserService"
+                   ref="userServiceImpl2" timeout="1000" version="2.0.0">
+        <!--<dubbo:method name="getUserAddressList" timeout="1000"/>-->
+    </dubbo:service>
+
     <!-- 服务的真正实现 -->
     <bean id="userServiceImpl" class="com.atguigu.gmall.service.impl.UserServiceImpl"></bean>
+    <bean id="userServiceImpl2" class="com.atguigu.gmall.service.impl.UserServiceImpl2"></bean>
 
     <!-- 5、统一设置服务提供方的规则  -->
     <!--<dubbo:provider timeout="1000"></dubbo:provider>-->
