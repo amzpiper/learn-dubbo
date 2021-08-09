@@ -20,7 +20,7 @@ public class OrderServiceImpl implements OrderService {
 
     //dubbo提供注解自动从注册中心来发现
     //@Reference(timeout = 0,url = "127.0.0.1:20880") //dubbo直连
-    @Reference(timeout = 0) //dubbo直连
+    @Reference(timeout = 0,loadbalance = "roundrobin") //dubbo直连
     UserService userService;
 
     @Override
